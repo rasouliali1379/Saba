@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="3dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_section"
+                        android:textDirection="rtl"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="منطقه"
+                        android:textSize="22sp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_zone"
+                        android:textDirection="rtl"
+                        android:textSize="18sp"
+                        android:gravity="end"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="محله"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_address"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="آدرس"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_contract_date"
+
+                        android:textSize="18sp"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="تاریخ قرارداد"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <!--                <LinearLayout-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/details_fragment_property_type"-->
+                <!--                        android:textDirection="rtl"-->
+                <!--                        android:gravity="end"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                    <TextView-->
+                <!--                        android:text="نوع ملک"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorAccent"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_const_year"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="سال ساخت"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_property_age"
+                        android:textDirection="rtl"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="سن"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <!--                <LinearLayout-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/details_fragment_property_direction"-->
+                <!--                        android:textDirection="rtl"-->
+                <!--                        android:gravity="end"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                    <TextView-->
+                <!--                        android:text="جهت"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorAccent"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                </LinearLayout>-->
+                <!--                <LinearLayout-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/details_fragment_property_use"-->
+                <!--                        android:textDirection="rtl"-->
+                <!--                        android:gravity="end"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                    <TextView-->
+                <!--                        android:text="کاربری ملک"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorAccent"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_property_area"
+                        android:textDirection="rtl"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="مساحت"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_property_price"
+                        android:text="1,000,000,000 تومان"
+                        android:textDirection="rtl"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/details_fragment_price_label"
+                        android:text="قیمت کل"
+                        android:textSize="22sp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_property_price_per_meter"
+                        android:text="1,000,000,000 تومان"
+                        android:textDirection="rtl"
+                        android:textSize="18sp"
+                        android:gravity="end"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/details_fragment_price_per_meter_label"
+                        android:text="قیمت هر متر"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/details_fragment_final_rent_separator"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/details_fragment_final_rent_layout"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_fragment_final_rent"
+                        android:text="1,000,000,000 تومان"
+                        android:textDirection="rtl"
+                        android:textSize="18sp"
+                        android:gravity="end"
+                        android:textColor="@color/colorNavy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="اجاره تمام شده"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <!--                <LinearLayout-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/details_fragment_struc_type"-->
+                <!--                        android:textDirection="rtl"-->
+                <!--                        android:gravity="end"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                    <TextView-->
+                <!--                        android:text="نوع اسکلت"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorAccent"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                </LinearLayout>-->
+
+
+
+                <!--                <LinearLayout-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/details_fragment_floors_number"-->
+                <!--                        android:textDirection="rtl"-->
+                <!--                        android:gravity="end"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                    <TextView-->
+                <!--                        android:text="تعداد طبقات"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorAccent"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                </LinearLayout>-->
+                <!--                <LinearLayout-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/details_fragment_rooms_number"-->
+                <!--                        android:textDirection="rtl"-->
+                <!--                        android:gravity="end"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                    <TextView-->
+                <!--                        android:text="خواب"-->
+                <!--                        android:textSize="18sp"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:textColor="@color/colorAccent"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+                <!--                </LinearLayout>-->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="3dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+<!--        <TextView-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="امکانات"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginEnd="30dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            app:cardElevation="3dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <FrameLayout-->
+<!--                android:padding="15dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:rotation="180"-->
+<!--                    android:id="@+id/details_fragment_recyclerview"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/details_fragment_no_facilities"-->
+<!--                    android:text="بدون امکانات"-->
+<!--                    android:gravity="center"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="100dp"/>-->
+<!--            </FrameLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <TextView
+            android:id="@+id/details_fragment_map_label"
+            android:layout_marginBottom="5dp"
+            android:text="موقعیت روی نقشه"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/details_fragment_map_root_layout"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <fragment
+                    android:id="@+id/details_fragment_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:id="@+id/details_fragment_map_click_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+                <TextView
+                    android:id="@+id/details_fragment_no_coordinates"
+                    android:alpha="0.6"
+                    android:text="موقعیت دریافت نشد"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

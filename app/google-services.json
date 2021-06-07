@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696583640379",
+    "firebase_url": "https://saba-282505.firebaseio.com",
+    "project_id": "saba-282505",
+    "storage_bucket": "saba-282505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696583640379:android:b299b91ac531e48231531e",
+        "android_client_info": {
+          "package_name": "com.rayanandishehnasr.hmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696583640379-j3d39stj1svtu9lrpp1shfq9ggr4lbuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoAl2AGoJ_6BrDLfV9vQd5CcafUV6ayKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696583640379-j3d39stj1svtu9lrpp1shfq9ggr4lbuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

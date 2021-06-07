@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/about_us_fragment_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/about_us_back_btn"
+            android:src="@drawable/ic_down"
+            android:rotation="90"
+            app:tint="@color/colorPrimaryDark"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:text="درباره ی ما"
+            android:textColor="@color/colorAccent"
+            android:textSize="26sp" />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/about_us_fragment_toolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.rayanandishehnasr.hmi.Utils.TextJustification.TextViewEx
+                android:id="@+id/about_us_content_txt"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/about_us_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

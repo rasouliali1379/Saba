@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="3dp"
+        android:id="@+id/map_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp">
+            <ImageView
+                android:id="@+id/map_activity_close_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close"
+                android:tint="@color/colorPrimaryDark" />
+            <TextView
+                android:id="@+id/map_activity_toolbar_title_txt"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:text="موقعیت دقیق مسکن"
+                android:visibility="gone"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/maps_activity_rg"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/maps_activity_rent_rb"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="اجاره"
+                    android:textSize="20sp"
+                    android:paddingStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/maps_activity_sell_rb"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:layout_marginStart="20dp"
+                    android:paddingStart="10dp"
+                    android:text="فروش"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ImageView
+        android:id="@+id/map_activity_my_location_btn"
+        android:src="@drawable/ic_victim"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/map_activity_toolbar"
+        android:layout_margin="10dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+    <Button
+        android:id="@+id/map_activity_search_btn"
+        android:background="@drawable/search_btn_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="جستجو"
+        android:textSize="24sp"
+        android:elevation="0dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

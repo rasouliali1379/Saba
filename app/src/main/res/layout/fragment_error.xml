@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hmi.Fragments.ErrorFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_net"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:paddingStart="70dp"
+            android:paddingEnd="70dp"
+            android:text="امکان ارتباط با سرور وجود ندارد! لطفا اتصال خود با اینترنت را بررسی کنید."
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/error_fragment_try_again_btn"
+            android:background="@null"
+            android:text="تلاش دوباره"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/radius_menu_first_item"
+        android:title="500" />
+    <item android:id="@+id/radius_menu_second_item"
+        android:title="1000" />
+    <item android:id="@+id/radius_menu_third_item"
+        android:title="1500" />
+    <item android:id="@+id/radius_menu_fourth_item"
+        android:title="2000" />
+</menu>
